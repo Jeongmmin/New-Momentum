@@ -1,10 +1,10 @@
 .container__music {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   background-color: white;
   padding: var(--padding);
-  border-radius:var(--border-radius);
+  border-radius: var(--border-radius);
   overflow-y: scroll;
 }
 
@@ -15,20 +15,24 @@
   align-items: center;
 }
 
-
 .song-info-box__album-cover-box img {
   border-radius: 10px;
   width: 2.5rem;
 }
 
-.list-header__artist-img {
-  width: 3rem;
-  height: 3rem;
+.list-header__user-img-outer {
   border-radius: 50%;
+  padding: 1rem;
   box-shadow: var(--box-shadow);
+  background: var(--gradient-background);
 }
 
-.list-header__song-artist {
+.list-header__user-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.list-header__user {
   font-size: var(--large-font);
   font-weight: 600;
   margin-top: 1.2rem;
@@ -44,12 +48,11 @@
 .music-list-box__button-box {
   display: flex;
   justify-content: space-around;
-  /* margin: 20px 0; */
   margin: 0.4rem 0;
 }
 
 .button-box__shuffle-btn {
-  background-color: #1f1f1f;
+  background-color: var(--purple);
   color: whitesmoke;
 }
 
@@ -58,8 +61,6 @@
 .music-list-box__song-list {
   display: flex;
   flex-direction: column;
-  /* margin: 5px 20px; */
-  /* overflow-y: scroll; */
 }
 
 .music-list-box__song-box {
@@ -118,7 +119,6 @@
 
 .song-description__song-title {
   font-weight: 700;
-  /* font-size: 14px; */
   font-size: var(--basic-font);
 }
 
@@ -127,14 +127,12 @@
 .music-list-box__controll-box {
   position: sticky;
   bottom: 0;
-  /* transform: translateY(-25%); */
-  background-color: #1f1f1f;
+  background: var(--gradient-background);
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
   align-items: center;
   border-radius: 30px;
-  /* margin: 0px 10px; */
   box-shadow: var(--box-shadow);
 }
 
@@ -152,7 +150,7 @@
 }
 
 .controll-song-description__song-title {
-  color: #e2e2e2;
+  color: white;
   font-size: var(--basic-font);
 }
 

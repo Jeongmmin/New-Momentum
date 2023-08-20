@@ -24,7 +24,6 @@
 
 .greeting-sub {
   font-size: var(--small-font);
-  /* margin-top: 15px; */
   margin-top: 0.938rem;
   color: var(--gray);
 }
@@ -45,7 +44,6 @@
 
 .cards div {
   border-radius: var(--border-radius);
-  background-color: cornflowerblue;
   background: linear-gradient(
     145deg,
     rgba(229, 161, 249, 0.9) 9%,

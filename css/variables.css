@@ -5,17 +5,17 @@
   --light-gray: #EBECEE;
   --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --box-shadow-bold: 8px 11px 13px -6px #a5a5a5;
+  --gradient-background: linear-gradient(
+    145deg,
+    rgba(229, 161, 249, 0.9) 9%,
+    rgba(107, 132, 230, 0.9) 51%,
+    rgba(129, 231, 250, 0.9) 86%
+  );
   --padding: 1.2rem;
-  /* --border-radius: 12px; */
   --border-radius: 0.625rem;
-  /* --border-radius-btn: 20px; */
   --border-radius-btn: 1.25em;
-  /* --large-font: 30px; */
   --large-font: 1.5rem;
-  /* --medium-font: 18px; */
   --medium-font: 1rem;
-  /* --basic-font: 14px; */
   --basic-font: 0.875rem;
-  /* --small-font: 10px; */
   --small-font: 0.5rem;
 }

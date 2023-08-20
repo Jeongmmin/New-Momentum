@@ -12,11 +12,8 @@
   border-bottom: 1px solid var(--light-gray);
 }
 
-
-
 .todo__list {
   margin: 1em 0;
-  /* height: 40%; */
   font-size: var(--basic-font);
   overflow-y: scroll;
 }
@@ -26,17 +23,13 @@
   align-items: center;
   justify-content: space-between;
 
-  /* padding: 12px 5px; */
   padding: 0.625rem 0.35rem;
 }
 
 .todo__list button {
   border: solid 1px var(--purple);
   color: var(--purple);
-  /* border-radius: 6px; */
-  /* background-color: transparent; */
   box-shadow: none;
-  /* padding: 5px 10px; */
   padding: 0.3rem 0.625rem;
 }
 
@@ -49,7 +42,6 @@
   border: var(--light-gray) 1px solid;
   border-radius: var(--border-radius-btn);
   width: 80%;
-  /* padding: 10px; */
   padding: 0.5rem;
   padding-left: 1rem;
   font-size: var(--basic-font);
@@ -59,6 +51,5 @@
   background-color: var(--purple);
   border: none;
   color: white;
-  /* border-radius: 6px; */
   padding: 0 2rem;
 }

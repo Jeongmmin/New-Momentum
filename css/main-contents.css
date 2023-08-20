@@ -1,32 +1,40 @@
 /* WEATHER BOX */
-.weather img{
+.weather img {
   width: 2rem;
-  /* widt: var(--medium-font); */
 }
 
-
 .weather span {
-  text-align:center;
+  text-align: center;
   font-weight: bold;
-  font-size:var(--large-font);
+  font-size: var(--large-font);
 }
 
 .weather span:last-child {
-  font-size:var(--basic-font);
+  font-size: var(--basic-font);
   font-weight: normal;
 }
 
-/* CLOCK BOX */ 
+/* CLOCK BOX */
 
 .clock {
-  /* margin-top: 50px; */
   margin-top: 1.5rem;
-  font-size:var(--large-font);
+  font-size: var(--large-font);
   font-weight: bold;
 }
 
 .date {
-  font-size:var(--basic-font);
-  /* font-weight: bold; */
+  font-size: var(--basic-font);
 }
 
+
+/* Quotes BOX */
+
+.quote__box span:first-child {
+  margin-top: 1.5rem;
+  font-size: var(--large-font);
+  text-align: center;
+}
+
+.quote__box span:last-child {
+  font-size: var(--basic-font);
+}

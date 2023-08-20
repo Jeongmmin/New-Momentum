@@ -1,6 +1,7 @@
 @import 'reset.css';
 @import 'variables.css';
 
+@import 'login.css';
 @import 'nav.css';
 @import 'main.css';
 @import 'main-contents.css';
@@ -64,5 +65,14 @@ button:hover {
 @media screen and (min-width: 1300px) {
   html {
     font-size: 18px;
+  }
+
+  .weather img{
+    width: 4.3rem;
+  }
+
+  .list-header__user-img {
+    width: 3rem;
+    height: 3rem;
   }
 }

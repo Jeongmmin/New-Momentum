@@ -1,0 +1,32 @@
+/* WEATHER BOX */
+.weather img{
+  width: 2rem;
+  /* widt: var(--medium-font); */
+}
+
+
+.weather span {
+  text-align:center;
+  font-weight: bold;
+  font-size:var(--large-font);
+}
+
+.weather span:last-child {
+  font-size:var(--basic-font);
+  font-weight: normal;
+}
+
+/* CLOCK BOX */ 
+
+.clock {
+  /* margin-top: 50px; */
+  margin-top: 1.5rem;
+  font-size:var(--large-font);
+  font-weight: bold;
+}
+
+.date {
+  font-size:var(--basic-font);
+  /* font-weight: bold; */
+}
+

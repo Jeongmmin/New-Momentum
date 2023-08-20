@@ -1,0 +1,21 @@
+:root {
+  --purple:#656dff;
+  --black: #001533;
+  --gray: #7A8594;
+  --light-gray: #EBECEE;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --box-shadow-bold: 8px 11px 13px -6px #a5a5a5;
+  --padding: 1.2rem;
+  /* --border-radius: 12px; */
+  --border-radius: 0.625rem;
+  /* --border-radius-btn: 20px; */
+  --border-radius-btn: 1.25em;
+  /* --large-font: 30px; */
+  --large-font: 1.5rem;
+  /* --medium-font: 18px; */
+  --medium-font: 1rem;
+  /* --basic-font: 14px; */
+  --basic-font: 0.875rem;
+  /* --small-font: 10px; */
+  --small-font: 0.5rem;
+}

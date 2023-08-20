@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/493cc16663.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/weather.js" defer></script>
+    <!-- <script src="./js/greeting.js" defer></script> -->
+    <script src="./js/clock.js" defer></script>
+    <script src="./js/todos.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container box">
+      <!-- <div id="first_window" class="modal_overlay">
+        <form class="hidden" id="login-form">
+          <h2 id="first_greeting">Hello, What's your name?</h2>
+          <input
+            autocomplete="off"
+            id="login_input"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="Enter your name here"
+          />
+          <input type="submit" value="Log In" id="loginBtn" />
+        </form>
+      </div> -->
+      <nav class="container__nav">
+        <ul class="nav__menu">
+          <li><i class="fa-solid fa-bars"></i> Overview</li>
+          <li><i class="fa-solid fa-calendar-days"></i> Schedule</li>
+          <li><i class="fa-solid fa-square-poll-vertical"></i> Insight</li>
+          <li><i class="fa-solid fa-file-lines"></i> Legal</li>
+          <li><i class="fa-solid fa-envelope"></i> Inbox</li>
+        </ul>
+        <div class="nav__login">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> <p>Logout</p>
+        </div>
+      </nav>
+
+      <section class="container__main box">
+        <!-- title -->
+        <header class="title__box">
+          <h1 class="greeting hidden" >Hey there, ${username} !</h1>
+          <h3 class="greeting-sub">Have a great day! Good luck on your every day.</h3>
+        </header>
+
+        <main class="main">
+          <div class="cards">
+
+            <!-- weather box -->
+            <div
+            class="box weather"
+            >
+            <span id="before__weather">weather</span>
+            <span></span>
+          </div>
+
+          <!-- clock__box -->
+          <!-- <div class="clock__outer"> -->
+            <div class="box clock__box">
+              <h2 class="clock">00:00:00</h2>
+              <h3 class="date"></h3>
+            </div>
+            <!-- </div> -->
+          </div>
+
+          <!-- todo -->
+          <div class="todos">
+            <h2 class="todos__title">What is your main focus for today?</h2>
+            <ul class="todo__list"></ul>
+            <form class="todo__form">
+              <input
+                type="text"
+                placeholder="Write a To Do and Press Enter"
+                class="todo__input"
+                autocomplete="off"
+              />
+              <button>Enter</button>
+            </form>
+          </div>
+        </main>
+      </section>
+      <section class="container__music box">
+         <!-- Music List Page-->
+        <!-- Nav -->
+        <!-- <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+        </ul>
+      </nav> -->
+
+        <!-- Music List Header -->
+        <div class="music-list-box__list-header">
+          <img class="list-header__artist-img" src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/36/815/236815_20220516163041_500.jpg?bb7f1827ec62a4ed3cf5bf4e56090424/melon/optimize/90"></img>
+          <span class="list-header__song-artist">다비치</span>
+          <span class="list-header__song-genre">Ballad, K-Pop</span>
+        </div>
+  
+          <!-- List Buttons -->
+          <div class="music-list-box__button-box">
+            <button class="button-box__shuffle-btn">Shuffle</button>
+            <button class="button-box__like-btn">
+              <span>
+                <i class="fa-solid fa-heart"></i>
+              </span>
+              <span>212,971</span>
+            </button>
+          </div>
+  
+          <!-- Song List -->
+          <ul class="music-list-box__song-list">
+            <li class="music-list-box__song-box">
+              <div class="song-box__song-info-box">
+                <div class="song-info-box__album-cover-box">
+                  <img
+                    src="https://lh3.googleusercontent.com/H5jCZBzUFQ2UusXn3KkRhd25RHn7sjSY0ZIz8UJ2biDruRPdEoB2_6ycgx3obTZAFChsc55rveC1GYg=w544-h544-l90-rj"
+                    alt="album-cover"
+                    class="song__album-cover"
+                  />
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="song-info-box__song-description">
+                  <span class="song-description__song-artist">SEVENTEEN</span>
+                  <span class="song-description__song-title"
+                    >우리의 새벽은 낮보다 뜨겁다</span
+                  >
+                </div>
+              </div>
+              <span class="song__menu">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </span>
+            </li>
+  
+            <li class="music-list-box__song-box play-now-box">
+              <div class="song-box__song-info-box">
+                <div class="song-info-box__album-cover-box play-now">
+                  <img
+                    src="https://lh3.googleusercontent.com/BCSTP7C1lqwlke0NRLRxXG9IMeMPDHOc0vsF4qNIGXmTe4P0NL8HC9bJi4N4XSzI3vnqiyJq4coMzTtu=w544-h544-l90-rj"
+                    alt="album-cover"
+                    class="song__album-cover"
+                  />
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="song-info-box__song-description">
+                  <span class="song-description__song-artist">다비치</span>
+                  <span class="song-description__song-title">팡파레</span>
+                </div>
+              </div>
+              <span class="song-box__song-menu">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </span>
+            </li>
+  
+            <li class="music-list-box__song-box">
+              <div class="song-box__song-info-box">
+                <div class="song-info-box__album-cover-box">
+                  <img
+                    src="https://lh3.googleusercontent.com/jRELX5qAew8CuPt1mAzv_51WgcWjY08kCbK051wB4MX8B_4K9CgUVX5YHqxRwPoFhoNQZ69vbY03tL6S=w544-h544-l90-rj"
+                    alt="album-cover"
+                    class="song__album-cover"
+                  />
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="song-info-box__song-description">
+                  <span class="song-description__song-artist">IVE</span>
+                  <span class="song-description__song-title">LOVE DIVE</span>
+                </div>
+              </div>
+              <span class="song-box__song-menu">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </span>
+            </li>
+  
+            <li class="music-list-box__song-box">
+              <div class="song-box__song-info-box">
+                <div class="song-info-box__album-cover-box">
+                  <img
+                    src="https://lh3.googleusercontent.com/1Of8yi2xMN2mWOAmIazJVrddfZHZAK_id3OTKNM_FAbijWwKxSn-kB6wk2DcLROv339Vv7zA7d-a4LJ6LA=w544-h544-l90-rj"
+                    alt="album-cover"
+                    class="song__album-cover"
+                  />
+                  <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="song-info-box__song-description">
+                  <span class="song-description__song-artist">선미</span>
+                  <span class="song-description__song-title">열이올라요</span>
+                </div>
+              </div>
+              <span class="song-box__song-menu">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </span>
+            </li>
+          </ul>
+  
+          <!-- Music List Contorll Box -->
+          <div class="music-list-box__controll-box">
+            <div class="controll-box__controll-song-description">
+              <span class="controll-song-description__song-artist">다비치</span>
+              <span class="controll-song-description__song-title">팡파레</span>
+            </div>
+            <div class="controll-box__controll-icon">
+              <i class="fa-solid fa-backward-step fa-md"></i>
+              <i class="fa-solid fa-pause fa-2xl"></i>
+              <i class="fa-solid fa-forward-step fa-md"></i>
+            </div>
+          </div>
+      </section>
+    </div>
+  </body>
+</html>

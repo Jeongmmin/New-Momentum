@@ -1,0 +1,36 @@
+#login-form {
+  text-align: center;
+}
+
+#login-form h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#first_greeting {
+  justify-content: center;
+  align-items: center;
+}
+
+#login_input {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+#login_input:focus {
+  outline: none;
+  background: none;
+}
+
+#loginBtn {
+  display: none;
+}

@@ -1,0 +1,68 @@
+@import 'reset.css';
+@import 'variables.css';
+
+@import 'nav.css';
+@import 'main.css';
+@import 'main-contents.css';
+@import 'todos.css';
+@import 'music.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #95d5fd, #e2c7fd);
+}
+
+.container {
+  height: 90%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.5fr;
+  grid-column-gap: 20px;
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: var(--border-radius);
+  color: var(--black);
+  padding: var(--padding);
+}
+
+.box {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+button {
+  border: none;
+  font-size: var(--basic-font);
+  font-weight: 500;
+  padding: 0.625rem 1.5rem;
+  border-radius: 1.25rem;
+  letter-spacing: 1px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: var(--box-shadow-bold);
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 18px;
+  }
+}
